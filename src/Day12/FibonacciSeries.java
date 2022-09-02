@@ -7,6 +7,9 @@ public class FibonacciSeries {
     public static void main(String[] args) {
         FibonacciSeries fibonacciSeries = new FibonacciSeries();
         fibonacciSeries.fibonacciSeriesGenerate();
+        System.out.println("Testing");
+        System.out.println("second template testing");
+        System.out.println("k hundai xa");
 
     }
 

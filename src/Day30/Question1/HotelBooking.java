@@ -29,8 +29,8 @@ public class HotelBooking {
     }
 
 
-    public boolean booked() {
-        double discount =0;
+  /*  public boolean booked(double discount) {
+        discount =0;
         double billAmount = roomCharge() - discount;
 
         if (billAmount > 0) {
@@ -39,14 +39,11 @@ public class HotelBooking {
         }
         return true;
 
-    }
+    }*/
 
     public void checkin(int checkInTime){
+        System.out.println("Customer " + this.customerName + "Check-in time " +checkInTime);
 
-        if (booked()) {
-            System.out.println("Customer " + this.customerName + "Check-in time " +checkInTime);
-        }
-        System.out.println("Customer " + this.customerName + "has outstanding due.");
     }
 
 
@@ -72,6 +69,7 @@ class Main{
 
 
         HotelBooking hotelBooking = new HotelBooking(cusName, roomType, noOfDays);
+       /* hotelBooking.booked();*/
 
         hotelBooking.checkin(10);
 
